@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=PT+Sans&family=Poppins&family=Raleway:wght@500&family=Rubik:wght@500&family=Wix+Madefor+Text&family=Ysabeau:wght@600&display=swap");
+body {
+  font-family: "Lora", serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "PT Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Wix Madefor Text", sans-serif;
+  /* font-family: 'Ysabeau', sans-serif; */
+}
+.btn-download {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.container {
+  max-width: 960px;
+}
+
+.text-center {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.home-link-git {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+  margin-top: 70px;
+}
+.home-link-git div a {
+  width: 150px;
+}
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+  margin-left: 190px;
+  margin-bottom: 40px;
+}
+
+.card-container {
+  flex: 0 0 33.33%; /* Set the width to one-third of the container */
+  padding: 10px;
+}
+.card-container img {
+  padding: 20px;
+  height: 300px;
+}
+@media (max-width: 768px) {
+  .btn-download {
+    width: fit-content;
+  }
+  .img-home {
+    width: 200px;
+  }
+  .text-center {
+    width: 300px;
+    padding: 10px;
+  }
+  .home-link-git {
+    margin-top: -40px;
+  }
+  .home-link-git div a {
+    width: 50px;
+  }
+  .card-container img {
+    /* padding: 20px; */
+    height: 230px;
+  }
+  .skills-container {
+    margin-left: -10px;
+  }
+  .card-container img {
+    padding: 5px;
+  }
+}
