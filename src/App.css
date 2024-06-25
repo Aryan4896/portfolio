@@ -1,0 +1,140 @@
+html {
+  scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  color: #fff;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.gradiant-text {
+  -webkit-background-clip: text;
+  @apply bg-gradient-to-t from-green-500 via-green-500 to-cyan-500 text-transparent;
+  overflow: hidden;
+  border-right: 2px solid #fff;
+  animation: typing-text steps(40) 3s infinite, blink ease 0.3s infinite;
+  text-wrap: nowrap;
+  display: inline-block;
+  width: max-content;
+  width: 0;
+}
+.wrapper {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  margin-top: 2rem; /* Adjust as needed */
+
+  border: 0.5px solid #102e24;
+  border-radius: 10px;
+}
+.button {
+  width: 200px;
+  height: auto;
+}
+
+.radio {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.download {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(90deg, #1ee325 50%, #0d3f67 50%);
+  background-position: right center;
+  background-size: 200% 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.download:hover,
+.radio:hover + .download {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.download:active {
+  box-shadow: none;
+  transform: scale(0.95);
+  transition: all 0.3s ease;
+}
+
+.open {
+  display: none;
+}
+
+.radio:checked ~ .download {
+  animation: loading 5s linear forwards 1;
+}
+
+.radio:checked + .download {
+  display: none;
+}
+
+.radio:checked ~ .open {
+  display: block;
+}
+
+@keyframes loading {
+  0% {
+    height: 100%;
+    padding: 20px;
+    background-position: right center;
+    color: transparent;
+    box-shadow: none;
+    pointer-events: none;
+  }
+  2% {
+    height: 5px;
+    padding: 0 20px;
+    color: transparent;
+    pointer-events: none;
+  }
+  95% {
+    height: 5px;
+    padding: 0 20px;
+    background-position: left center;
+    color: transparent;
+    pointer-events: none;
+  }
+  100% {
+    height: 100%;
+    padding: 18px 20px;
+    background-position: left center;
+    color: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    z-index: 4;
+    pointer-events: auto;
+  }
+}
+
+@keyframes typing-text {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 350px;
+  }
+}
+
+@keyframes typing-text {
+  to {
+    border-color: transparent;
+  }
+}
