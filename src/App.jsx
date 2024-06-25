@@ -1,18 +1,17 @@
 import "./App.css";
-import Porfile from "./assets/photo.png";
-import profile from "./photo.png";
-import Card from "./Card";
-import weather from "./weather.png";
-import projectmarketing from "./marketing3.png";
-import university from "./university.png";
-import typing from "./typing.png";
-import chess from "./chess.png";
-import notes from "./notely.png";
-import Facebook from "./assets/facebook.svg";
-import LinkedIn from "./assets/linkedin.svg";
-import Instagram from "./assets/instagram.svg";
-import ArrowDown from "./assets/arrow-down-green.svg";
-import DownloadButton from "./DownloadButton";
+import profile from "@/assets/photo.png";
+import Card from "@/Card";
+import weather from "@/assets/weather.png";
+import projectcharting from "@/assets/marketing3.png";
+import university from "@/assets/university.png";
+import typing from "@/assets/typing.png";
+import chess from "@/assets/chess.png";
+import notes from "@/assets/notely.png";
+import Facebook from "@/assets/facebook.svg";
+import LinkedIn from "@/assets/linkedin.svg";
+import Instagram from "@/assets/instagram.svg";
+import ArrowDown from "@/assets/arrow-down-green.svg";
+import DownloadButton from "@/DownloadButton";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -138,7 +137,7 @@ function App() {
 
                 <Card
                   livehref="https://d1swos-3000.csb.app/"
-                  image={projectmarketing}
+                  image={projectcharting}
                   title="Digital-Marketing Website"
                   description="Responsive HTML/CSS/React.js Digital Marketing Website"
                   githref={
